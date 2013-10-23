@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3816641A18185FCC008E2AB8 /* TSOPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816641918185FCC008E2AB8 /* TSOPlayersViewController.m */; };
+		3816641D1818606B008E2AB8 /* TSOPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3816641C1818606B008E2AB8 /* TSOPlayer.m */; };
 		38D093271815BB5800646C3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D093261815BB5800646C3B /* Foundation.framework */; };
 		38D093291815BB5800646C3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D093281815BB5800646C3B /* CoreGraphics.framework */; };
 		38D0932B1815BB5800646C3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D0932A1815BB5800646C3B /* UIKit.framework */; };
@@ -58,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3816641818185FCC008E2AB8 /* TSOPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSOPlayersViewController.h; sourceTree = "<group>"; };
+		3816641918185FCC008E2AB8 /* TSOPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSOPlayersViewController.m; sourceTree = "<group>"; };
+		3816641B1818606B008E2AB8 /* TSOPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSOPlayer.h; sourceTree = "<group>"; };
+		3816641C1818606B008E2AB8 /* TSOPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSOPlayer.m; sourceTree = "<group>"; };
 		38D093231815BB5800646C3B /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D093261815BB5800646C3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		38D093281815BB5800646C3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -168,6 +174,10 @@
 				38D0933C1815BB5900646C3B /* TSOViewController.m */,
 				38D0933E1815BB5900646C3B /* Images.xcassets */,
 				38D0932D1815BB5800646C3B /* Supporting Files */,
+				3816641818185FCC008E2AB8 /* TSOPlayersViewController.h */,
+				3816641918185FCC008E2AB8 /* TSOPlayersViewController.m */,
+				3816641B1818606B008E2AB8 /* TSOPlayer.h */,
+				3816641C1818606B008E2AB8 /* TSOPlayer.m */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -355,7 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D093331815BB5800646C3B /* main.m in Sources */,
+				3816641D1818606B008E2AB8 /* TSOPlayer.m in Sources */,
 				38D093371815BB5800646C3B /* TSOAppDelegate.m in Sources */,
+				3816641A18185FCC008E2AB8 /* TSOPlayersViewController.m in Sources */,
 				38D0933D1815BB5900646C3B /* TSOViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,6 +577,7 @@
 				38D093571815BB5900646C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38D093581815BB5900646C3B /* Build configuration list for PBXNativeTarget "RatingsTests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +586,7 @@
 				38D0935A1815BB5900646C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
