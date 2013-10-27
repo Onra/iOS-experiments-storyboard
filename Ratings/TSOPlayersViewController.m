@@ -60,10 +60,31 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
     
     TSOPlayer *player = [self.players objectAtIndex:indexPath.row];
-    cell.textLabel.text = player.name;
-    cell.detailTextLabel.text = player.game;
+    
+    UILabel *nameLabel = (UILabel *)[cell viewWithTag:100];
+    nameLabel.text = player.name;
+    
+    UILabel *gameLabel = (UILabel *)[cell viewWithTag:101];
+    gameLabel.text = player.game;
+    
+    UIImageView *ratingImageView = (UIImageView *)[cell viewWithTag:102];
+    
+    ratingImageView.image = [self imageForRating:player.rating];
     
     return cell;
+}
+
+- (UIImage *)imageForRating:(int)rating
+{
+    switch (rating)
+    {
+        case 1: return [UIImage imageNamed:@"1StarSmall.png"];
+        case 2: return [UIImage imageNamed:@"2StarsSmall.png"];
+        case 3: return [UIImage imageNamed:@"3StarsSmall.png"];
+        case 4: return [UIImage imageNamed:@"4StarsSmall.png"];
+        case 5: return [UIImage imageNamed:@"5StarsSmall.png"];
+    }
+    return nil;
 }
 
 /*
